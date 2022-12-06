@@ -1,0 +1,103 @@
+@charset "UTF-8";
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  overflow-y: visible; }
+
+.navbar {
+  padding: 0 0 2px; }
+  .navbar img {
+    width: 100%; }
+
+.container-fluid {
+  min-height: 100vh;
+  padding: 0; }
+  .container-fluid .hero-banner {
+    width: 100%;
+    height: 150px;
+    background-image: url("../images/heroBA.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative; }
+    .container-fluid .hero-banner p {
+      padding: 1em;
+      position: absolute;
+      bottom: 0;
+      color: #000;
+      background-color: #fff; }
+  .container-fluid .search-results .result-filter li.selected, .container-fluid .search-results .result-filter li:hover {
+    font-weight: 700;
+    cursor: pointer; }
+  .container-fluid .search-results h2 {
+    padding: 1em 0; }
+  .container-fluid .search-results ul {
+    padding-left: 0;
+    position: sticky;
+    top: 0; }
+  .container-fluid .search-results li {
+    list-style-type: none; }
+    .container-fluid .search-results li a {
+      color: #000; }
+    .container-fluid .search-results li p {
+      font-size: 14px;
+      margin-bottom: 0; }
+    .container-fluid .search-results li .date {
+      padding-top: 0.5em;
+      font-size: 12px;
+      text-align: right; }
+  .container-fluid .search-results .swift-search {
+    /* clears the ‘X’ from Chrome */ }
+    .container-fluid .search-results .swift-search .search-input {
+      position: relative; }
+    .container-fluid .search-results .swift-search input {
+      width: 100%;
+      padding: 0.5em 0.2em;
+      border: none;
+      border-bottom: solid 2px; }
+      .container-fluid .search-results .swift-search input:focus-visible {
+        outline: none; }
+    .container-fluid .search-results .swift-search input[type="search"]::-webkit-search-decoration,
+    .container-fluid .search-results .swift-search input[type="search"]::-webkit-search-cancel-button,
+    .container-fluid .search-results .swift-search input[type="search"]::-webkit-search-results-button,
+    .container-fluid .search-results .swift-search input[type="search"]::-webkit-search-results-decoration {
+      display: none; }
+    .container-fluid .search-results .swift-search .icon-search {
+      display: block;
+      width: 20px;
+      height: 20px;
+      background-image: url("../images/magnifying-glass-solid.svg");
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: absolute;
+      top: 13px;
+      right: 22px; }
+  .container-fluid .search-results .summary p {
+    padding: 1em 0;
+    font-size: 13px; }
+  .container-fluid .search-results .pagination {
+    display: table;
+    margin: 0 auto;
+    text-align: center; }
+    .container-fluid .search-results .pagination .active {
+      background-color: #000;
+      color: #fff; }
+  .container-fluid .search-results .pagination a {
+    color: #000;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none; }
+  .container-fluid .search-results .topBtn {
+    float: right;
+    margin-right: 1em;
+    padding: 6px 12px;
+    background-color: #fff; }
+
+footer img {
+  width: 100%;
+  margin-top: 2em; }
+
+@media screen and (max-width: 768px) {
+  .row {
+    margin: 0; } }

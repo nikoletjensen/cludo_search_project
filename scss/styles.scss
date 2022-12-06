@@ -1,0 +1,145 @@
+$white: #fff;
+$black: #000;
+$roboto: 'Roboto', sans-serif;
+
+body {
+  margin: 0;
+  font-family: $roboto;
+  overflow-y: visible;
+}
+
+.navbar {
+  padding: 0 0 2px;
+  img {
+    width: 100%;
+  }
+}
+
+.container-fluid {
+  min-height: 100vh;
+  padding: 0;
+
+  .hero-banner {
+    width: 100%;
+    height: 150px;
+    background-image: url("../images/heroBA.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+    p {
+      padding: 1em;
+      position: absolute;
+      bottom: 0;
+      color: $black;
+      background-color: $white;
+    }
+  }
+  .search-results {
+    .result-filter {
+      li.selected, li:hover {
+        font-weight: 700;
+        cursor: pointer;
+      }
+    }
+    h2 {
+      padding: 1em 0;
+    }
+    ul {
+      padding-left: 0;
+      position: sticky;
+      top: 0;
+    }
+    li {
+      list-style-type: none;
+      a {
+        color: $black;
+      }
+      p {
+        font-size: 14px;
+        margin-bottom: 0;
+      }
+      .date {
+        padding-top: 0.5em;
+        font-size: 12px;
+        text-align: right;
+      }
+    }
+    .swift-search {
+      .search-input {
+        position: relative;
+      }
+      input {
+        width: 100%;
+        padding: 0.5em 0.2em;
+        border: none;
+        border-bottom: solid 2px;
+        &:focus-visible {
+          outline: none;
+        }
+      }
+    /* clears the ‘X’ from Chrome */
+    input[type="search"]::-webkit-search-decoration,
+    input[type="search"]::-webkit-search-cancel-button,
+    input[type="search"]::-webkit-search-results-button,
+    input[type="search"]::-webkit-search-results-decoration { 
+      display: none; 
+    }
+
+      .icon-search {
+        display: block;
+        width: 20px;
+        height: 20px;
+        background-image: url("../images/magnifying-glass-solid.svg");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        top: 13px;
+        right: 22px;
+      }
+    }
+    .summary {
+      p {
+        padding: 1em 0;
+        font-size: 13px;
+      }
+    }
+    .pagination {
+      display: table;
+      margin: 0 auto;
+      text-align: center;
+      .active {
+        background-color: $black;
+        color: $white;
+      }
+    }
+    
+    .pagination a {
+      color: $black;
+      float: left;
+      padding: 8px 16px;
+      text-decoration: none;
+    }
+
+    .topBtn {
+      float: right;
+      margin-right: 1em;
+      padding: 6px 12px;
+      background-color: $white;
+    }
+  }
+}
+footer img {
+  width: 100%;
+  margin-top: 2em;
+}
+
+// Mobile styles
+
+@media screen and (max-width: 768px) {
+  .row {
+    margin: 0;
+  }
+}
